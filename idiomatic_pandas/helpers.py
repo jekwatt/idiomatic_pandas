@@ -9,5 +9,8 @@ def records_to_dataframe(records):
 
 
 def dataframe_to_records(dataframe):
+    """ Convert the DataFrame to a dictionary.
+    ‘records’ : list like [{column -> value}, … , {column -> value}]
+    """
     records = dataframe.to_dict("records")
     return records
